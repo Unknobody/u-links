@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Wendy+One&display=swap");
+
+:root {
+  --background-color: #1d1d1d;
+  --light-color: #eeeeee;
+  --pink: #f13e54;
+  --blue: #2cdceb;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: rgb(29, 29, 29);
+  background: radial-gradient(
+    circle,
+    rgba(29, 29, 29, 1) 0%,
+    rgba(24, 24, 24, 1) 50%,
+    rgba(29, 29, 29, 1) 100%
+  );
+  color: var(--light-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+header {
+  margin: 2rem auto;
+}
+
+header h1 {
+  font-family: "Wendy One", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+}
+
+header h1 span {
+  color: var(--pink);
+  text-shadow: -3px -3px 0 var(--blue);
+}
+
+#main-container {
+  padding: 1rem 2rem;
+  width: 90vw;
+  overflow: auto;
+  border: 1px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 1rem;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid var(--pink);
+  background: white;
+  object-fit: contain;
+  transition: 0.5s all ease;
+}
+
+.card img:hover {
+  box-shadow: 0 0 0 5px black, 0 0 0 10px var(--blue),
+    0 0 5px 25px rgba(0, 0, 0, 0.411);
+  transform: rotate(360deg);
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: -1rem;
+}
+
+#info-container {
+  width: 90vw;
+  margin-top: 1rem;
+  height: 50px;
+  background: var(--background-color);
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  font-size: 1.2rem;
+}
