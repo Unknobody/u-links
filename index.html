@@ -1,51 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UnknoLinks</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="assets/scss/main.css">
+    <link rel="stylesheet" media="screen and (min-width: 1280px)" href="assets/scss/big_screen.css" />
 </head>
+</head>
+
 <body>
 
     <header>
         <h1><span>U</span>nkno<span>L</span>inks</h1>
         <figure id="blockquote">
-        </figure>    
+        </figure>
     </header>
 
+    <div id="container-menu">
+        <ul>
+            <li id="most-visited-link" class="hide">Les + visités</li>
+            <li id="most-visited-link-mobile"><i class="fa-solid fa-star"></i></li>
+            <li id="social-link" class="hide">Réseaux Sociaux</li>
+            <li id="social-link-mobile"><i class="fa-regular fa-message"></i></li>
+            <li id="dev-link" class="hide">Dev</li>
+            <li id="dev-link-mobile"><i class="fa-solid fa-code"></i></li>
+            <li id="games-link" class="hide">Jeux</li>
+            <li id="games-link-mobile"><i class="fa-solid fa-dice"></i></li>
+            <li id="entertainment-link" class="hide">U Apps</li>
+            <li id="entertainment-link-mobile"><i class="fa-brands fa-umbraco"></i></li>
+        </ul>
+    </div>
 
-    <div id="main-container">
-        <div class="card" id="unknow-dev-card">
-            <a href="https://unknobody.xyz">
-                <img src="img/logo.png" alt="Unknow Dev" target="_blank">
+    <div class="main-container" id="most-visited-container">
+        <div class="card">
+            <a href="https://unknobody.xyz" target="_blank">
+                <img src="img/logo.png" alt="Unknow Dev">
             </a>
             <div class="title">Unknow Dev</div>
         </div>
 
-        <div class="card" id="unknow-dev-admin-card">
-            <a href="https://unknobody.xyz/wp-admin/">
-                <img src="img/unknobody.png" alt="Unknow Admin" target="_blank">
+        <div class="card">
+            <a href="https://unknobody.xyz/wp-admin/" target="_blank">
+                <img src="img/unknobody.png" alt="Unknow Admin">
             </a>
             <div class="title">Unknow Admin</div>
         </div>
 
 
-        <div class="card" id="facebook-card">
+        <div class="card">
             <a href="https://www.facebook.com/DeLaBruyerePierre" target="_blank">
                 <img src="img/fb.png" alt="mon compte Facebook">
             </a>
             <div class="title">Facebook</div>
 
         </div>
-        <div class="card" id="twitter-card">
+        <div class="card">
             <a href="https://twitter.com/UnknoDev" target="_blank">
                 <img src="img/twitter.png" alt="mon compte Twitter">
             </a>
             <div class="title">Twitter</div>
         </div>
-        <div class="card" id="github-card">
+        <div class="card">
             <a href="https://github.com/Unknobody" target="_blank">
                 <img src="img/github.png" alt="mon compte Github">
             </a>
@@ -53,28 +71,28 @@
         </div>
 
 
-        <div class="card" id="wordpress-card">
+        <div class="card">
             <a href="https://developer.wordpress.org/" target="_blank">
                 <img src="img/wordpress.png" alt="Doc Wordpress">
             </a>
             <div class="title">Doc Wordpress</div>
         </div>
 
-        <div class="card" id="font-awesome-card">
+        <div class="card">
             <a href="https://fontawesome.com/search?m=free" target="_blank">
                 <img src="img/fontawesome.png" alt="Font Awesome">
             </a>
             <div class="title">Font Awesome</div>
         </div>
 
-        <div class="card" id="bootstrap-card">
+        <div class="card">
             <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank">
                 <img src="img/bootstrap.png" alt="Bootstrap">
             </a>
             <div class="title">Bootstrap</div>
         </div>
 
-        <div class="card" id="codepen-card">
+        <div class="card">
             <a href="https://codepen.io/trending" target="_blank">
                 <img src="img/codepen.png" alt="Codepen">
             </a>
@@ -84,13 +102,158 @@
     </div>
 
 
-    <div id="info-container">
+    <div class="main-container hide" id="social-container">
+        <div class="card">
+            <a href="https://www.facebook.com/DeLaBruyerePierre" target="_blank">
+                <img src="img/fb.png" alt="mon compte Facebook">
+            </a>
+            <div class="title">Facebook</div>
+
+        </div>
+        <div class="card">
+            <a href="https://twitter.com/UnknoDev" target="_blank">
+                <img src="img/twitter.png" alt="mon compte Twitter">
+            </a>
+            <div class="title">Twitter</div>
+        </div>
+
+
+        <div class="card">
+            <a href="https://www.instagram.com/?hl=fr" target="_blank">
+                <img src="img/insta.jpg" alt="Instagram">
+            </a>
+            <div class="title">Instagram</div>
+
+        </div>
+        <div class="card">
+            <a href="https://www.tiktok.com/" target="_blank">
+                <img src="img/tiktok.png" alt="TikTok">
+            </a>
+            <div class="title">TikTok</div>
+        </div>
+
     </div>
 
-    
 
-    <script src="main.js"></script>
-    <script src="https://kit.fontawesome.com/898030fc5d.js" crossorigin="anonymous"></script>
+
+
+    <div class="main-container hide" id="dev-container">
+        <div class="card">
+            <a href="https://dev.to/" target="_blank">
+                <img src="img/dev.png" alt="Dev.to">
+            </a>
+            <div class="title">Dev.to</div>
+
+        </div>
+        <div class="card">
+            <a href="https://github.com/Unknobody" target="_blank">
+                <img src="img/github.png" alt="mon compte Github">
+            </a>
+            <div class="title">Github</div>
+        </div>
+
+
+        <div class="card">
+            <a href="https://developer.wordpress.org/" target="_blank">
+                <img src="img/wordpress.png" alt="Doc Wordpress">
+            </a>
+            <div class="title">Doc Wordpress</div>
+        </div>
+
+        <div class="card">
+            <a href="https://fontawesome.com/search?m=free" target="_blank">
+                <img src="img/fontawesome.png" alt="Font Awesome">
+            </a>
+            <div class="title">Font Awesome</div>
+        </div>
+
+        <div class="card">
+            <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank">
+                <img src="img/bootstrap.png" alt="Bootstrap">
+            </a>
+            <div class="title">Bootstrap</div>
+        </div>
+
+        <div class="card">
+            <a href="https://codepen.io/trending" target="_blank">
+                <img src="img/codepen.png" alt="Codepen">
+            </a>
+            <div class="title">Codepen</div>
+        </div>
+
+    </div>
+
+
+
+    <div class="main-container hide" id="games-container">
+        <div class="card">
+            <a href="https://fitgirl-repacks.site/" target="_blank">
+                <img src="img/fitgirl.jpg" alt="Fitgirl">
+            </a>
+            <div class="title">Fitgirl</div>
+        </div>
+        <div class="card">
+            <a href="https://members.iracing.com/membersite/member/statsseries.jsp" target="_blank">
+                <img src="img/iracing.jpg" alt="iRacing Stats">
+            </a>
+            <div class="title">iRacing Stats</div>
+        </div>
+    </div>
+
+
+    <div class="main-container hide" id="entertainment-container">
+        <div class="card">
+            <a href="https://unknobody.xyz" target="_blank">
+                <img src="img/logo.png" alt="Unknow Dev">
+            </a>
+            <div class="title">Unknow Dev</div>
+        </div>
+
+        <div class="card">
+            <a href="https://unknobody.xyz/uapps/UTodoBoard" target="_blank">
+                <img src="img/tableau.png" alt="U TodoList">
+            </a>
+            <div class="title">U Todo List</div>
+        </div>
+
+
+        <div class="card">
+            <a href="https://unknobody.xyz/uapps/ppc2/" target="_blank">
+                <img src="img/ppc2.png" alt="Pierre, Papier, Ciseaux">
+            </a>
+            <div class="title">P,P,C</div>
+        </div>
+
+
+        <div class="card">
+            <a href="https://unknobody.xyz/uapps/jokes/" target="_blank">
+                <img src="img/laugh.jpg" alt="Jokes de Papa">
+            </a>
+            <div class="title">Jokes de Papa</div>
+        </div>
+
+
+        <div class="card">
+            <a href="https://unknobody.xyz/family-apps/apps/U-Shopping/" target="_blank">
+                <img src="img/shop.png" alt="Liste de courses">
+            </a>
+            <div class="title">Shop List</div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/898030fc5d.js?v=1" crossorigin="anonymous"></script>
 
 </body>
+
 </html>

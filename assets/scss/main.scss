@@ -32,13 +32,17 @@ body {
   padding: 2rem 0;
 }
 
+.hide {
+    display: none !important;
+}
+
 header {
   margin: 2rem auto;
 }
 
 header h1 {
   font-family: "Wendy One", sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -47,7 +51,53 @@ header h1 span {
   text-shadow: -3px -3px 0 var(--blue);
 }
 
-#main-container {
+header figure {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+header figure blockquote {
+    text-align: center;
+    opacity: .7;
+
+}
+
+header figure figcaption {
+    margin-top: 10px;
+    opacity: 1;
+    text-align: right;
+    font-style: italic;
+}
+
+#container-menu {
+    width: 90vw;
+}
+
+#container-menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#container-menu ul li {
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: .1rem .2rem;
+    width: 20%;
+    height: 35px;
+    cursor: pointer;
+    font-size: .7rem;
+    text-align: center;
+}
+
+#container-menu ul li i {
+    padding-top: 10px;
+}
+
+
+
+.main-container {
   padding: 1rem 2rem;
   width: 90vw;
   overflow: auto;
@@ -60,8 +110,8 @@ header h1 span {
 
 .card {
   margin: 1rem;
-  width: 250px;
-  height: 250px;
+  width: 50px;
+  height: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,25 +119,24 @@ header h1 span {
 }
 
 .card img {
-  width: 200px;
-  height: 200px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  border: 5px solid var(--pink);
+  border: 2px solid var(--pink);
   background: white;
   object-fit: contain;
   transition: 0.5s all ease;
 }
 
 .card img:hover {
-  box-shadow: 0 0 0 5px black, 0 0 0 10px var(--blue),
-    0 0 5px 25px rgba(0, 0, 0, 0.411);
+  box-shadow: 0 0 0 2px black, 0 0 0 5px var(--blue),
+    0 0 2px 8px rgba(0, 0, 0, 0.411);
   transform: rotate(360deg);
 }
 
 .title {
   text-align: center;
-  font-size: 2rem;
-  margin-top: -1rem;
+  font-size: .6rem;
 }
 
 #info-container {
